@@ -1,0 +1,648 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+.navbar ul li {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar ul li:hover {
+    background-color: aquamarine;
+    border-radius: 20%;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+.navbar div{
+    display: flex;
+    margin-right: 20px;
+}
+.navbar div a{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+
+}
+.navbar div:hover {
+    background-color: aquamarine;
+    border-radius: 20%;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.person {
+    width: 25%;
+    margin: auto;
+}
+.interests {
+    width: 30%;
+    margin: auto;
+}
+
+.ppc {
+    margin:0;
+    width:235px;
+    height:75px;
+    border:none;
+}
+
+.ppc iframe {
+    width:45%;
+}
+
+.aya {
+    text-align:center;
+    width:20%;
+}
+
+.container img{
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px gray;
+    height: auto;
+    width:500px;
+    height:350px;
+    margin-top: 50px;
+}
+.container img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    box-shadow: 10px 10px 5px beige;
+}
+body {
+    background-color: aliceblue;
+}
+main {
+    background: linear-gradient(90deg, rgba(254,254,255,1) 0%,rgba(226,237,233,0,72) 37%, rgba(208,238,243,1) 100%);
+}
+p {
+    text-align: justify; /* Выравнивание текста по ширине */
+    font-size: 1.2rem; /* Увеличенный размер шрифта */
+    font-weight: normal; /* Обычный вес шрифта */
+    margin-right: 20px;
+    margin-left: 10px; /* Отступы по бокам */
+    transition: 0.8s ease; 
+}
+
+/* Эффект при наведении на параграф */
+p:hover {
+    background-color:  antiquewhite; 
+}
+.container section {
+    width: 100%;
+    margin: auto;
+}
+
+.container-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video1, .video2, .video3 {
+    margin:auto;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px 5px antiquewhite;
+    padding:auto; 
+    max-width: 560px;
+    margin-top:15px;
+}
+
+.video1 video, .video2 iframe, .video3 iframe {
+    width:100%;
+    height:100%;
+    margin:auto;
+}
+
+
+.container-audio {
+    display: flex;
+    flex-direction: column; /* Контейнер для аудио, элементы располагаются вертикально */
+}
+
+.audio1, .audio2, .audio3 {
+    display: flex;
+    flex-direction: column; /* Внутренние элементы располагаются вертикально */
+    margin-top: 20px; /* Отступ сверху для каждого аудио-блока */
+}
+
+.audio1 audio, .audio2 audio, .audio3 audio {
+    width: 30%; /* Аудиоплееры занимают 60% ширины контейнера */
+    margin: auto; /* Центрирование аудиоплееров по горизонтали */
+}
+
+.audio1 img, .audio2 img, .audio3 img {
+    width:15%;
+    height:15%;
+    margin: auto; /* Центрирование изображений */
+    border-radius: 10%; /* Скругление углов изображений */
+    box-shadow: 5px 5px 5px #7cc6e5; /* Добавление синеватой тени к изображениям */
+}
+
+.container-book {
+    display: flex;
+    flex-direction: column; /* Контейнер для книг, элементы располагаются вертикально */
+    
+}
+
+.book1, .book2, .book3 {
+    display: flex;
+    flex-direction: column; /* Внутренние элементы располагаются вертикально */
+    margin-top: 20px; /* Отступ сверху для каждого книжного блока */
+}
+
+.book1 img, .book2 img, .book3 img {
+    margin: auto; /* Центрирование изображений */
+    border-radius: 10%; /* Скругление углов изображений */
+    box-shadow: 5px 5px 5px #7cc6e5; /* Добавление синеватой тени к изображениям */
+    margin-bottom: 10px; /* Отступ снизу для изображений */
+}
+
+.book1 a, .book2 a, .book3 a {
+    margin: auto; /* Центрирование ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    color: black; /* Цвет текста ссылок черный */
+    font-size: 1.2rem; /* Увеличенный размер шрифта для ссылок */
+} 
+
+.book1 img:hover, .book2 img:hover, .book3 img:hover {
+    box-shadow: 5px 5px 5px 5px antiquewhite; /* Изменение тени на зеленовато-желтую при наведении на изображение */
+}
+
+.book1 a:hover, .book2 a:hover, .book3 a:hover {
+    background-color: antiquewhite; /* Изменение фона ссылки на синий при наведении */
+    transition: 0.7s ease; /* Плавный переход фона за 0.7 секунды */
+} 
+
+.pinguin {
+    border:none;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    margin-right: 10px;
+    margin: auto;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .person {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0%;
+    }
+    .person p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .container img {
+        margin-top: 20px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px gray;
+        width: 95%;
+        height: auto;
+        margin: auto;
+    }
+
+    .container img:hover {
+        transform: scale(1.03);
+        transition: 0.5s ease;
+        box-shadow: 5px 5px 5px #7cc6e5;
+    }
+
+    .interests {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0%;
+    }
+    .interests p {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    h2 {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .video1 iframe {
+        width: 95%;
+        height: 320px;
+    }
+    .book1 img, .book2 img, .book3 img {
+        width: 95%;
+        height: auto;
+    }
+    .burger {
+        display: block;
+        position: relative;
+        width:40px;
+        height:40px;
+        margin:auto;
+        margin-left:20px;
+        margin-right:5px;
+    }
+
+    .burger span{
+        position:absolute;
+        width:30px;
+        left:5px;
+        height:3px;
+        background-color: rgb(80, 29, 168);
+        bottom: 20px;
+    }
+
+    .burger span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+    .burger span:nth-child(3) {
+        transform:translateY(10px);
+    }
+    
+    
+    .navbar ul {
+        position:absolute;
+        background-color:  linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);;
+        flex-direction:column;
+        width:30%;
+        height:auto;
+        top: 85px;
+        z-index:2;
+        margin:0;
+        display:none;
+    }
+    
+    .navbar ul li {
+        margin-top:10px;
+    }
+    
+    .navbar ul li:hover {
+        background:rgb(6, 4, 4);
+        transform:scale(1.07);
+        transition:0.4s ease;
+        border-radius:5%;
+    }
+    
+    .navbar ul li a:hover{
+        color:rgba(22, 173, 60, 0.72);
+    }
+    
+    .navbar ul li:nth-child(1) {
+       margin-top:20px;
+    }
+    
+    .navbar ul li a {
+        margin-left:0;
+        font-size: 1.2rem;
+    }
+    
+    .navbar.open ul {
+        display:block;
+        transform:translateX(100%);
+        transition:0.7s ease-in-out;
+        right: 30%;
+        }
+    
+    .navbar.open .burger span:nth-child(1){
+        transform:translateY(0) rotate(45deg);
+    }
+    
+    .navbar.open .burger span:nth-child(2) {
+        opacity:0;
+    }
+    
+    .navbar.open .burger span:nth-child(3) {
+        transform:translateY(0) rotate(-45deg);
+    }   
+
+    .math {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .counters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0%;
+    }
+    .counters p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .butcont {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0%;
+    }
+    .butcont p {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+    .container img {
+        margin-top: 20px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 5px gray;
+        width: 320px;
+        height: 200px;
+        margin: auto;
+
+    }
+    
+}
+
+.navbar ul .work {
+    position: relative; /* Set the position to relative to enable absolute positioning of its child elements */
+    display: flex; /* Use flexbox for laut */
+    z-index: 10; /* Set stacking order */
+}
+
+.navbar ul .work ul li {
+    z-index: 20; /* Ensure list items have the same stacking order as the parent */
+    background-color: #a81d1d; /* Set background color */
+    margin-bottom: 2px; /* Add space between items */       
+}
+
+.navbar ul .work:hover ul {
+    display: block; /* Show the dropdown when hovering over the parent */
+}
+
+.navbar ul .work ul li:hover {
+    background-color: rgb(162, 23, 30); /* Change background color on hover */
+    border-radius: 0; /* Remove border radius */
+}
+
+.navbar ul .work ul {
+    position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
+    flex-direction: column; /* Arrange children in a column */
+    left: -70px; /* Offset the dropdown 10px from the left of the parent */
+    top: 100%; /* Align the top of the dropdown with the top of the parent */
+    width: 100px; /* Set a fixed width for the dropdown */
+    display: none; /* Initially hide the dropdown */
+    padding: 0; /* Remove default padding */
+    z-index: 20; /* Set a higher stacking order for the dropdown */
+    background-color: antiquewhite;
+}
+
+.navbar ul .work ul li {
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Add bottom margin */
+    background-color: unset; /* Remove default background color */
+    font-size: 1.2rem; /* Increase font size */
+    margin-left: 10px; /* Offset the list item 10px from the left */
+    color: black; /* Set text color to black */
+}
+
+.navbar ul .work ul li:hover {
+    background-color: black; /* Change background color to black on hover */
+}
+
+.navbar ul .work ul li:hover a:hover {
+    color: white; /* Change text color to white when hovering over the link */
+}
+
+.navbar ul .work:hover ul li a {
+    color: black; /* Set text color to black when hovering over the parent */
+}
+
+.form {
+    flex-direction: column; /* Arrange the children of the .form container in a column layout */
+}
+
+.form form {
+    display: flex; /* Use flexbox for the form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+.form form fieldset {
+    display: flex; /* Use flexbox for the fieldset layout */
+    flex-direction: column; /* Arrange fieldset elements in a column */
+    width: 50%; /* Set the width of the fieldset to 50% of the container */
+    margin: auto; /* Center the fieldset horizontally */
+    margin-top: 30px; /* Add a margin of 30px to the top */
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom */
+}
+
+.form form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+}
+
+.form form fieldset legend {
+    text-align: center; /* Center the legend text */
+    font-size: 1.2rem; /* Set the font size of the legend text to 1.2rem */
+    font-weight: bold; /* Make the legend text bold */
+}
+
+.form form button {
+    width: 200px; /* Set the width of the button to 200px */
+    font-size: 1.2rem; /* Set the font size of the button text to 1.2rem */
+    background-color: #24779b; /* Set the background color of the button */
+    color: white; /* Set the text color of the button to white */
+    margin: auto; /* Center the button horizontally */
+    margin-bottom: 20px; /* Add a margin of 20px to the bottom */
+}
+
+.form form button:hover {
+    font-size: 1.2rem; /* Maintain the font size of the button text on hover */
+    background-color: #91130c; /* Change the background color of the button on hover */
+    color: rgb(248, 243, 243); /* Change the text color of the button on hover */
+}
+
+.form form fieldset {
+    width:65%;
+}
+
+.form form fieldset {
+    width:80%;
+}
+
+.math {
+    display : flex;
+}
+
+.math form {
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    padding-top:20px;
+    width:100%;
+}
+
+.math form fieldset {
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    width:50%;
+    margin-bottom:30px;
+}
+
+.math form fieldset legend {
+    text-align: center;
+    font-size:1.2rem;
+}
+
+.math form fieldset .butcont {
+    display: flex;
+    flex:row;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.math form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+    background: wheat; 
+}
+
+.math form fieldset .butcont button {
+    display:block;
+    width:20%;
+    box-sizing:border-box;
+    height:40px;
+    margin: auto;
+    background: wheat;
+}
+
+.math form fieldset p {
+    display: flex;
+    margin:0;
+}
+
+.math form fieldset p span {
+    margin: auto;
+    font-size:1.2rem;
+}
+
+.samolet {
+    border:none;
+}
+
+@media (max-width: 700px) {
+    
+
+    
+}
+
+.API {
+    display: flex;
+    flex-direction: column;
+}
+
+.API .astana {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 2px;
+}
+
+.API .astana img, span {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .kyoto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .kyoto img, span{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+.API .rome {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.API .rome img, span{
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+.API .astana img {
+    border-radius: 8px;
+}
+
+.API .kyoto img {
+    border-radius: 8px;
+}
+
+.API .rome img {
+    border-radius: 8px;
+}
+
+.API .astana span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .kyoto span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.API .rome span {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+.city {
+    text-align: center;                /* Center text within each city block */
+    width: 50%;                        /* Set width for each city block; adjust as needed */
+    margin-bottom: 30px;     
+}
+.city {
+                /* Space between image and city name */
+    color: #333;                       /* Text color */
+    font-size: 50px;                  /* Font size */
+}
